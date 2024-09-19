@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "aframe-watcher": "github:supermedium/aframe-watcher"
+  }
+}
