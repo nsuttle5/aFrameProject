@@ -9,28 +9,37 @@
   <body>
     <a-scene>
       <!-- Skybox Color -->
-      <a-sky color="#48a3ea"></a-sky>
+        <a-sky color="#48a3ea"></a-sky>
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
       <!-- Ground Plane -->
-      <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" color="#474354"></a-plane>
+        <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" color="#474354"></a-plane>
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
       <!-- Dorm Buildings -->
 
-      <!-- Left Building -->
-       <a-box position="-8 0.5 -11" rotation="0 0 0" width="4" height="10" depth="12" color="#b27065"></a-box>
-       <a-box position="-8 0.5 -4.5" rotation="0 0 0" width="2" height="10" depth="1.5" color="#b27065"></a-box>
-       <a-box position="-5.5 0.5 -12" rotation="0 0 0" width="1.5" height="10" depth="1.5" color="#b27065"></a-box>
+        <!-- Left Building -->
+          <a-box position="-8 0.5 -11" rotation="0 0 0" width="4" height="10" depth="12" color="#b27065"></a-box>
+          <a-box position="-8 0.5 -4.5" rotation="0 0 0" width="2" height="10" depth="1.5" color="#b27065"></a-box>
+          <a-box position="-5.5 0.5 -12" rotation="0 0 0" width="1.5" height="10" depth="1.5" color="#b27065"></a-box>
 
-      <!-- Right Building -->
-       <a-box position="8 0.5 -11" rotation="0 0 0" width="4" height="10" depth="12" color="#b27065"></a-box>
-       <a-box position="8 0.5 -4.5" rotation="0 0 0" width="2" height="10" depth="1.5" color="#b27065"></a-box>
-       <a-box position="5.5 0.5 -12" rotation="0 0 0" width="1.5" height="10" depth="1.5" color="#b27065"></a-box>
+        <!-- Left Building Roof -->
+         <a-cylinder segments-radial = 3 position="-8 5.5 -4.7" rotation="0 0 90" radius="1" height="1"scale=".9 1.9 .9" color="#FFC0CB"></a-cylinder>
+         <a-cylinder segments-radial = 3 position="-6.936 5.5 -11" rotation="0 90 90" radius="1" height="1"scale=".9 11.9 .9" color="#FFC0CB"></a-cylinder>
+
+        <!-- Right Building -->
+          <a-box position="8 0.5 -11" rotation="0 0 0" width="4" height="10" depth="12" color="#b27065"></a-box>
+          <a-box position="8 0.5 -4.5" rotation="0 0 0" width="2" height="10" depth="1.5" color="#b27065"></a-box>
+          <a-box position="5.5 0.5 -12" rotation="0 0 0" width="1.5" height="10" depth="1.5" color="#b27065"></a-box>
+        
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
       <!-- Dining Hall -->
-      <a-box position="0 0.5 -7" rotation="0 0 0" width="4" height="4" depth="6" color="#4CC3D9" material="opacity: 0.5"></a-box>
-      <a-box position="0 2.5 -7" rotation="0 0 0" width="4.5" height=".2" depth="6.5" color="#8c8599"></a-box>
-      <a-box position="2.5 1.5 -7.25" rotation="0 0 0" width="1" height="1.5" depth="5.5" color="#4CC3D9" ></a-box>
-      <a-box position="2.87 0.41 -7.25" rotation="0 0 0" width=".25" height=".75" depth="5.5" color="#4CC3D9" ></a-box>
+        <a-box position="0 0.5 -7" rotation="0 0 0" width="4" height="4" depth="6" color="#4CC3D9" material="opacity: 0.5"></a-box>
+        <a-box position="0 2.5 -7" rotation="0 0 0" width="4.5" height=".2" depth="6.5" color="#8c8599"></a-box>
+        <a-box position="2.5 1.5 -7.25" rotation="0 0 0" width="1" height="1.5" depth="5.5" color="#4CC3D9" ></a-box>
+        <a-box position="2.87 0.41 -7.25" rotation="0 0 0" width=".25" height=".75" depth="5.5" color="#4CC3D9" ></a-box>
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
       <!-- Stairs -->
        <a-box position="3.75 0 -6" rotation="0 0 0" width="1.5" height=".25" depth=".5" color="#8c8599"></a-box>
@@ -53,22 +62,28 @@
 
        <a-box position="5.5 0 -6" rotation="0 0 0" width="1.5" height=".75" depth=".5" color="#8d8400"></a-box>
        <a-box position="5.5 0 -9.5" rotation="0 0 0" width="1.5" height="2.5" depth=".5" color="#8d8400"></a-box>
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+      <!-- 2nd Floor Ground -->
+        <a-box position="0 0 -13.5" rotation="0 0 0" width="12.5" height="2.5" depth="7.5" color="#8c8599"></a-box>
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       
       <!-- Trees -->
-      <a-entity geometry="primitive: cylinder; radius: 0.1" position="5 0.5 0" material="color: #311800"></a-entity>
-      <a-entity geometry="primitive: cone; height: 1.5; radiusBottom: 0.5" position="5 1.5 0" material="color: #008000"></a-entity>
+        <a-entity geometry="primitive: cylinder; radius: 0.1" position="5 0.5 0" material="color: #311800"></a-entity>
+        <a-entity geometry="primitive: cone; height: 1.5; radiusBottom: 0.5" position="5 1.5 0" material="color: #008000"></a-entity>
 
-      <a-entity geometry="primitive: cylinder; radius: 0.1" position="1 0.5 0" material="color: #311800"></a-entity>
-      <a-entity geometry="primitive: cone; height: 1.5; radiusBottom: 0.5" position="1 1.5 0" material="color: #008000"></a-entity>
+        <a-entity geometry="primitive: cylinder; radius: 0.1" position="1 0.5 0" material="color: #311800"></a-entity>
+        <a-entity geometry="primitive: cone; height: 1.5; radiusBottom: 0.5" position="1 1.5 0" material="color: #008000"></a-entity>
 
-      <a-entity geometry="primitive: cylinder; radius: 0.1" position="-1 0.5 0" material="color: #311800"></a-entity>
-      <a-entity geometry="primitive: cone; height: 1.5; radiusBottom: 0.5" position="-1 1.5 0" material="color: #008000"></a-entity>
+        <a-entity geometry="primitive: cylinder; radius: 0.1" position="-1 0.5 0" material="color: #311800"></a-entity>
+        <a-entity geometry="primitive: cone; height: 1.5; radiusBottom: 0.5" position="-1 1.5 0" material="color: #008000"></a-entity>
 
-      <a-entity geometry="primitive: cylinder; radius: 0.1" position="-3 0.5 0" material="color: #311800"></a-entity>
-      <a-entity geometry="primitive: cone; height: 1.5; radiusBottom: 0.5" position="-3 1.5 0" material="color: #008000"></a-entity>
+        <a-entity geometry="primitive: cylinder; radius: 0.1" position="-3 0.5 0" material="color: #311800"></a-entity>
+        <a-entity geometry="primitive: cone; height: 1.5; radiusBottom: 0.5" position="-3 1.5 0" material="color: #008000"></a-entity>
 
-      <a-entity geometry="primitive: cylinder; radius: 0.1" position="-5 0.5 0" material="color: #311800"></a-entity>
-      <a-entity geometry="primitive: cone; height: 1.5; radiusBottom: 0.5" position="-5 1.5 0" material="color: #008000"></a-entity>
+        <a-entity geometry="primitive: cylinder; radius: 0.1" position="-5 0.5 0" material="color: #311800"></a-entity>
+        <a-entity geometry="primitive: cone; height: 1.5; radiusBottom: 0.5" position="-5 1.5 0" material="color: #008000"></a-entity>
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
       <!-- Primitive shapes 
       <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
